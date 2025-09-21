@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baltic Trade Line SIA — Otsemüük, spordi- ja hobikaubad</title>
+  <meta name="description" content="Baltic Trade Line SIA: spordi-, hobi-, muusika- ja raamatukaubad. Dropshipping, marketplace’i haldus, komplektid ja otsemüük. Aadress: 13 - 4 Matisa iela, Riga, LV-1001, Latvia. E-post: smirnontars@zohomail.eu" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0e0f14;
+      --card:#151823;
+      --muted:#8e95a9;
+      --brand:#3ddc97; /* värvi aktsent */
+      --brand-2:#6aa6ff;
+      --fg:#e9edf4;
+      --ring: rgba(61,220,151,.35);
+      --shade: rgba(255,255,255,.06);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--fg); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;}
+    h1,h2,h3{font-family:"Playfair Display", serif; letter-spacing:.2px}
+    a{color:inherit; text-decoration:none}
+    .container{width:min(1120px,92%); margin-inline:auto}
+    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(1.3) blur(8px); background:linear-gradient(180deg, rgba(14,15,20,.9), rgba(14,15,20,.55)); border-bottom:1px solid var(--shade)}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{display:flex; gap:10px; align-items:center}
+    .badge{width:34px; height:34px; display:grid; place-items:center; border-radius:12px; background:linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow:0 6px 24px rgba(106,166,255,.25)}
+    .nav a{opacity:.9}
+    .nav ul{display:flex; gap:18px; list-style:none; padding:0; margin:0}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:14px; background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:#071017; font-weight:600; box-shadow:0 10px 28px rgba(61,220,151,.25); border:0; cursor:pointer}
+    .btn.secondary{background:#1f2535; color:var(--fg); box-shadow:inset 0 0 0 1px var(--shade)}
+    .hero{padding:64px 0 48px; position:relative; overflow:hidden}
+    .hero .wrap{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center}
+    .hero h1{font-size:clamp(36px, 5vw, 56px); margin:0 0 8px}
+    .hero p{color:var(--muted); font-size:18px; line-height:1.6}
+    .chip{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:#121522; border:1px solid var(--shade); color:#b5bed3; font-size:13px;}
+    .section{padding:64px 0}
+    .section h2{font-size:32px; margin:0 0 10px}
+    .section p.lead{color:var(--muted); margin:0 0 22px}
+    .cols-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .cols-2{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
+    .item{background:var(--card); border:1px solid var(--shade); border-radius:18px; padding:22px}
+    .item h3{margin:0 0 8px; font-size:20px}
+    .item p{color:var(--muted); margin:0}
+    .list{display:grid; gap:10px; padding-left:18px}
+    .list li{color:#cbd3e6; line-height:1.6}
+    .process{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; counter-reset:step}
+    .step{position:relative; background:var(--card); border:1px solid var(--shade); border-radius:18px; padding:24px}
+    .step:before{counter-increment:step; content:counter(step); position:absolute; top:14px; right:16px; background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#081018; width:34px; height:34px; border-radius:10px; display:grid; place-items:center; font-weight:800}
+    form{display:grid; gap:12px}
+    input, textarea{width:100%; padding:14px 16px; border-radius:14px; background:#111423; border:1px solid var(--shade); color:var(--fg); outline:0}
+    input:focus, textarea:focus{box-shadow:0 0 0 6px var(--ring); border-color:var(--brand)}
+    textarea{min-height:140px; resize:vertical}
+    footer{padding:42px 0 56px; border-top:1px solid var(--shade); color:#b6bed3}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; font-size:12px; background:#111423; border:1px solid var(--shade); color:#b8c1d9}
+
+    /* изображение в геро-блоке */
+    .hero-img{display:flex; justify-content:center; align-items:center}
+    .hero-img img{max-width:100%; border-radius:20px; box-shadow:0 6px 24px rgba(0,0,0,.35)}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero .wrap{grid-template-columns:1fr}
+      .cols-3{grid-template-columns:1fr}
+      .cols-2{grid-template-columns:1fr}
+      .process{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="badge" aria-hidden="true">🏷️</div>
+        <strong>Baltic Trade Line SIA</strong>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Avaleht</a></li>
+          <li><a href="#meist">Meist</a></li>
+          <li><a href="#teenused">Teenused</a></li>
+          <li><a href="#voimsused">Miks meie</a></li>
+          <li><a href="#protsess">Koostöö</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / 1. Главный экран -->
+  <section id="hero" class="hero">
+    <div class="container wrap">
+      <div>
+        <span class="chip">Otsemüügi partner · spordi-, hobi- ja muusikakaubad</span>
+        <h1>Õige toode õigesse poodi. <br/>Me toome Baltikumi trendid teieni.</h1>
+        <p>Meie fookus on <strong>Other Miscellaneous Retailers</strong> segmendil: sporditarbed, hobikomplektid, muusikainstrumendid, raamatud ja erikaubad. Haldame dropshippingut ja marketplace’e ning varustame otsemüügi kanaleid kiirelt, läbipaistvalt ja mõõdetavalt.</p>
+        <div style="display:flex; gap:12px; margin-top:18px">
+          <a class="btn" href="#teenused">Vaata teenuseid</a>
+          <a class="btn secondary" href="#kontakt">Küsi pakkumist</a>
+        </div>
+      </div>
+
+      <!-- ФОТО СПРАВА -->
+     <div class="hero-img" aria-label="illustration">
+  <img src="eabdc43d5198174af62411cd55ae3003.jpg" alt="Baltic Trade Line SIA — tootevalik">
+</div>
+
+    </div>
+  </section>
+
+  <!-- 2. Про нас -->
+  <section id="meist" class="section">
+    <div class="container">
+      <h2>Kes me oleme — <em>Baltic Trade Line SIA</em></h2>
+      <p class="lead">Oleme Riias baseeruv meeskond, kes ühendab tootjad, hulgimüüjad ja veebipoed. Meie tugevus on täpses andmepõhises sortimendis ja kanali­põhistes hinnastrateegiates. Töötame igapäevaselt spordi-, hobi-, muusika- ja raamatusegmendis ning katame nii <abbr title="direct-to-consumer">DTC</abbr> otsemüügi kui ka marketplace’id. Pakume valmis komplekte kampaaniateks ja hooajaliseks müügiks ning liigume kiiresti: toote üleslaadimisest esimese müügini loeme tunde, mitte nädalaid.</p>
+    </div>
+  </section>
+
+  <!-- 3. Сервисы -->
+  <section id="teenused" class="section">
+    <div class="container">
+      <h2>Mis me iga päev ära teeme</h2>
+      <p class="lead">Kolm selget teenust, mis on loodud liikuma koos teie müügiga.</p>
+      <div class="cols-3">
+        <div class="item">
+          <h3>1) Dropshipping & täitmiskeskus</h3>
+          <p>Integreerime teie e-poe ja tarnime otse kliendile. Pakime neutraalselt, hallame tagastusi ning anname API kaudu reaalajas laostaatuse. Sobib kiirete testide ja hooajaliste kampaaniate jaoks.</p>
+        </div>
+        <div class="item">
+          <h3>2) Marketplace’i haldus</h3>
+          <p>Avame ja optimeerime tootelehed (SEO, fotod, bullet’id), juhime hinnamonitori ja reklaami. Töötab Amazonis, eBay’s, Kaup24-s jm. Raporteerime marginaali, CTR-i ja konversiooni.</p>
+        </div>
+        <div class="item">
+          <h3>3) Komplektid ja erilahendused</h3>
+          <p>Koostame „valmis müügiks” setid: näiteks kodune jõusaal, lapse teaduslabor või algaja muusiku pakett. Lisame juhendid, QR-video ja järelturu tarvikud, et tõsta kordusostu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Преимущества / Почему нас выбрать -->
+  <section id="voimsused" class="section">
+    <div class="container">
+      <h2>Miks partnerid jäävad meiega</h2>
+      <div class="cols-3">
+        <div class="item">
+          <h3>Konkreetne sortiment, mitte "kõike natuke"</h3>
+          <p>Valime nišid, kus on nõudlus ja piisav marginaal. Teeme A/B testid tootevariantidega ning lõpetame julgelt need, mis ei liigu.</p>
+        </div>
+        <div class="item">
+          <h3>Andmepõhine hinnastus</h3>
+          <p>Kasutame hinnamonitori ja konkurentsivahemikke; kaitseme marginaali kampaania ajal, et maht ei sööks kasumit.</p>
+        </div>
+        <div class="item">
+          <h3>Logistika, mis kannab</h3>
+          <p>Balti lühikesed tarneajad, EL-i sõbralik tagastus ja skaleeruv pakendamine. SLA: saadetis liikvele 24 h jooksul tööpäevadel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Описание сервиса поподробнее + миссия -->
+  <section class="section">
+    <div class="container cols-2">
+      <div class="item">
+        <h3>Dropshipping & Marketplace lähemalt</h3>
+        <p>Toome eeltöödeldud sisupaketi: pealkirjad (ET/EN/LV/LT), A+ kirjeldused, mõõdutabelid, fotod ja video. Sünkime varu ERP/CSV/API kaudu, seadistame delikaatsed hinnareeglid ja kampaania ajastused. Tulemuseks on vähem käsitööd, rohkem katvust ja kindlam rotatsioon.</p>
+        <ul class="list">
+          <li>SKU-de elutsükli ülevaade: launch → scale → sunset</li>
+          <li>Tarnevalikud: LV/EE pakk-automaat, kuller, EU DDP</li>
+          <li>Raport: nädalakokkuvõte + kuu marginaal</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>Meie siht ja lubadus</h3>
+        <p>Ehitatame kauplustele tootevaliku, mis on <em>ostetav</em> juba täna. Meie missioon on muuta nišikaubad nähtavaks, taskukohaseks ja kiiresti kättesaadavaks, ilma et kvaliteet või teenindus kannataks.</p>
+        <ul class="list">
+          <li>Keskendume kordusostu kasvule, mitte ainult esmale</li>
+          <li>Selged tingimused, null peidetud tasusid</li>
+          <li>Partnerlus, mitte pelk hulgikanal</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Наш процесс / поэтапно -->
+  <section id="protsess" class="section">
+    <div class="container">
+      <h2>Kuidas koostöö töötab</h2>
+      <p class="lead">Kolm sammu, et saada tooted müüki ja rahavoog liikuma.</p>
+      <div class="process">
+        <div class="step">
+          <h3>1 · Päring & sobivus</h3>
+          <p>Saadete lühikese kirjelduse sihtturust ja kanalist. Teeme sortimendi soovituse ning lepime kokku hinnapiiri ja SLA.</p>
+        </div>
+        <div class="step">
+          <h3>2 · Seadistus & sisu</h3>
+          <p>Loome tootelehed, ühendame varu ja tarned. Testime 3–5 esimest SKU-d, et kinnitada nõudlust ja hinnataset.</p>
+        </div>
+        <div class="step">
+          <h3>3 · Käivitus & mõõtmine</h3>
+          <p>Alustame reklaamide ja kampaaniatega. Jagame nädalaraportit: müük, ROAS, tagastused ja järgmised sammud.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Контактная форма -->
+  <section id="kontakt" class="section">
+    <div class="container cols-2">
+      <div class="item">
+        <h3>Võtame ühendust</h3>
+        <p class="muted">Kirjuta meile lühike sõnum — vasta­me tööpäeviti 24 h jooksul. Vajadusel saadame kohe ka MOQ ja hinnakirja.</p>
+        <form onsubmit="event.preventDefault(); const n=document.getElementById('notice'); n.style.display='block'; n.scrollIntoView({behavior:'smooth'});">
+          <label for="name" class="muted">Teie nimi</label>
+          <input id="name" name="name" placeholder="Nt. Mari-Liis Kask" required>
+          <label for="email" class="muted">E-post</label>
+          <input id="email" name="email" type="email" placeholder="nimi@ettevote.ee" required>
+          <label for="msg" class="muted">Sõnum</label>
+          <textarea id="msg" name="msg" placeholder="Kirjelda lühidalt: kanal, eeldatav maht, huvipakkuvad kategooriad…"></textarea>
+          <button class="btn" type="submit">Saada päring</button>
+        </form>
+        <div id="notice" style="display:none; margin-top:16px" class="chip">✅ Päring on vastu võetud. Vastame peagi!</div>
+      </div>
+      <div class="item">
+        <h3>Kontaktid & juriidika</h3>
+        <p><strong>Baltic Trade Line SIA</strong><br>13 - 4 Matisa iela, Riga, LV-1001, Latvia</p>
+        <p>E-post: <a href="mailto:smirnontars@zohomail.eu">smirnontars@zohomail.eu</a></p>
+        <p class="muted">Teenindame kliente üle Baltikumi ja EL-i. Koos partneritega pakume tarneid nii pakiautomaati kui ka kulleriga.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap">
+        <span>© <span id="y"></span> Baltic Trade Line SIA - Kõik õigused kaitstud</span>
+        <span class="muted">Nišikaubad · Otsemüük · Marketplace’i haldus</span>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
